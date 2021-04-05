@@ -6,5 +6,7 @@ import com.movieticket.dto.MoviesDto;
 
 public interface MovieServiceLocal {
 	
-	public List<MoviesDto> getAllMovies(); 
+	public List<MoviesDto> getAllMovies();
+
+	public MoviesDto listMoviesById(Integer cinemaId); 
 }
