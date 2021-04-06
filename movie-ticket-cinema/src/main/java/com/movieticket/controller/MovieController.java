@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.movieticket.dto.ResponseMessage;
-import com.movieticket.entity.Cinema;
 import com.movieticket.service.MovieServiceLocal;
 
 @RestController
