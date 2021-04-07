@@ -2,15 +2,15 @@
 
 This is the Eureka Server used for the Service Discovery
 
-* URL 
+### URL 
 
-	localhost:8761
+> http://localhost:8761
 
-* Port 
+### Port 
 
-	8761
+> 8761
 	
-* application.properties
+### application.properties
 
 	```
 	spring.application.name = naming-server

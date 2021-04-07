@@ -43,12 +43,14 @@ public class MovieServiceImpl implements MovieServiceLocal {
 	public MoviesDto listMoviesById(Integer cinemaId) {
 		MoviesDto moviesDto = new MoviesDto();
 		Optional<Cinema> cinema = movieRepository.findById(cinemaId);
-		moviesDto.setCinemaId(cinema.get().getCinemaId());
-		moviesDto.setGenre(cinema.get().getGenre());
-		moviesDto.setEndTime(cinema.get().getEndTime());
-		moviesDto.setStartTime(cinema.get().getStartTime());
-		moviesDto.setMovieDirector(cinema.get().getMovieDirector());
-		moviesDto.setMovieName(cinema.get().getMovieName());
+		if (cinema.isPresent()) {
+			moviesDto.setCinemaId(cinema.get().getCinemaId());
+			moviesDto.setGenre(cinema.get().getGenre());
+			moviesDto.setEndTime(cinema.get().getEndTime());
+			moviesDto.setStartTime(cinema.get().getStartTime());
+			moviesDto.setMovieDirector(cinema.get().getMovieDirector());
+			moviesDto.setMovieName(cinema.get().getMovieName());
+		}
 
 		return moviesDto;
 	}
