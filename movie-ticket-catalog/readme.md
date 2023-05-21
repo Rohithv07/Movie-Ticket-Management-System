@@ -27,6 +27,6 @@ spring.jpa.properties.hibernate.jdbc.lob.non_contextual_creation=true
 spring.datasource.driver-class-name=com.sap.db.jdbc.Driver
 spring.datasource.username=USR_1ACNSHVB0QQA51XLHCOS9JCYW
 spring.datasource.url=jdbc:sap://zeus.hana.prod.eu-central-1.whitney.dbaas.ondemand.com:23803?encrypt=true&validateCertificate=true&currentschema=USR_1ACNSHVB0QQA51XLHCOS9JCYW
-spring.datasource.password=Ny0k3DJdZKQurHM4DmJOvpK8AMtRgFrogjhRXHHJxcb1h3WMJ0QG5IUq_973IoVa-mDbqGWygRy7N2WVQ.ndy587gZsmr5HBojh80o.gxriRGFDO9WWyxUlrm1AQTZpZ
+spring.datasource.password=
 
 ```
